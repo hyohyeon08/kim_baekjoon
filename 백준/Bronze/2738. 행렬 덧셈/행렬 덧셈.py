@@ -1,11 +1,13 @@
-n, m = map(int, input().split())
-a = [] 
-b = [] 
-for i in range(n):
-    a.append(list(map(int, input().split())))
-for i in range(n): # n번 반복
-    b.append(list(map(int, input().split())))
-for i in range(n): # n번 반복
-    for j in range(m): # m번 반복
-        print(a[i][j] + b[i][j], end = " ") 
-    print() # 줄바꿈풀이 2
+N, M = map(int, input().split())
+
+N_list = []
+M_list = []
+
+for i in range(N):
+    N_list.append(list(map(int, input().split())))
+for i in range(N):
+    M_list.append(list(map(int, input().split())))
+for i in range(N):
+    for j in range(M):
+        print(N_list[i][j] + M_list[i][j], end=" ")
+    print()
